@@ -12,6 +12,7 @@ body {
 }
 .main {
   margin: 12px 0;
+  padding: 12px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -20,12 +21,8 @@ body {
   align-self: flex-start;
   text-decoration: none;
 }
-.main.bottom {
-  justify-self: end;
-}
 .avatar {
   display: flex;
-  align-items: flex-end;
 }
 .card {
   padding: 12px 20px !important;
@@ -40,8 +37,10 @@ body {
 }
 
 @media screen and (max-width: 576px) {
-  .card {
-    width: 100%;
+  .main .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
